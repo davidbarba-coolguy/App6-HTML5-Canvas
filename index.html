@@ -47,10 +47,10 @@ console.log("This file last modified " + docMod); // generates message in javaSc
   		b_context.fillRect(50, 25, 150, 100); 
 
 		}
-function clearCanvas() {//this function will clear the canvas
-	var b_canvas = document.getElementById("a");
-	var b_context = b_canvas.getContext("2d");//retrives context here
-	 b_context.clearRect(0, 0, b_canvas.width, b_canvas.height);//clears canvas
+	function clearCanvas() {//this function will clear the canvas
+		var b_canvas = document.getElementById("a");
+		var b_context = b_canvas.getContext("2d");//retrives context here
+		 b_context.clearRect(0, 0, b_canvas.width, b_canvas.height);//clears canvas
 }
 
 
@@ -98,7 +98,7 @@ function clearCanvas() {//this function will clear the canvas
 </div>
 	<div>
 
-	<canvas id="a" width="300" height="225"></canvas> <!--establishes canvas, its measurements, and location-->
+	<canvas id="a" width="300" height="225" style="border: 2px solid black;"></canvas> <!--establishes canvas, its measurements, and location-->
 
 </div>
 		 	
