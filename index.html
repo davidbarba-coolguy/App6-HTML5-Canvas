@@ -47,7 +47,10 @@ console.log("This file last modified " + docMod); // generates message in javaSc
   		b_context.fillRect(50, 25, 150, 100); 
 
 		}
-
+function clear() {
+	var b_canvas = document.getElementById("b");
+	b_canvas.width = b_canvas.width;
+}
 
 
 </script>
@@ -89,7 +92,11 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	<p>Place items on canvas utilizing buttons!</p>
 
 <div
-	<button onclick="draw_b()">Draw Rectangle</button> <!--button that calls draw_b function-->
+	<button onclick="draw_b()">Draw Rectangle</button>; <!--button that calls draw_b function-->
+</div>
+	<div
+	<button onclick="clear()">Clear Canvas</button> <!--button that clears canvas using clear function-->
+
 
 	<canvas id="a" width="300" height="225"></canvas> <!--establishes canvas, its measurements, and location-->
 
