@@ -37,16 +37,22 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 </script>
-	
-	<canvas id="a" width="300" height="225"></canvas> <!-- establishes canvas and its measurements -->
 
+		<canvas id="a" width="300" height="225"></canvas> <!--establishes canvas and its measurements-->
+		<button onclick="draw_b()">Draw Rectangle</button> <!--button that calls draw_b function-->
 
+<script>
 	function draw_b() {
- 		var b_canvas = document.getElementById("b"); <!--finds canvas element-->
-  		var b_context = b_canvas.getContext("2d"); <!--calls canvas' GetContext method -->
+ 		var b_canvas = document.getElementById("b"); //finds canvas element
+  		var b_context = b_canvas.getContext("2d"); //calls canvas' GetContext method
   		b_context.fillRect(50, 25, 150, 100); 
 
 		}
+
+
+
+</script>
+	
 
 
 
