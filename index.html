@@ -53,6 +53,13 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		 b_context.clearRect(0, 0, b_canvas.width, b_canvas.height);//clears canvas
 }
 
+function addTextToCanvas() {//function that will add my name to canvas
+    var canvas = document.getElementById("a");
+    var context = canvas.getContext("2d");
+    context.font = "20px Arial"; // Set the font size and style
+    context.fillStyle = "black"; // Set the text color
+    context.fillText("DAVID FREAKING BARBA", 50, 50); // Draw text at coordinates (50, 50)
+}
 
 </script>
 	
@@ -94,7 +101,9 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 <div>
 	<button onclick="draw_b()">Draw Rectangle</button> <!--button that calls draw_b function-->
+	<button onclick="addTextToCanvas()">Add Cool Name</button> <!--button that calls draw_b function-->
 	<button onclick="clearCanvas()">Clear Canvas</button> <!--button that clears canvas using clear function-->
+
 </div>
 	<div>
 
