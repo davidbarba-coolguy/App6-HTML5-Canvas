@@ -32,16 +32,21 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
 
-// indicates when file was last modified
 <script>// indicates when file was last modified
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 </script>
 	
-//establishes canvas
-	<canvas id="a" width="300" height="225"></canvas>
+	<canvas id="a" width="300" height="225"></canvas> <!-- establishes canvas and its measurements -->
 
+
+	function draw_b() {
+ 		var b_canvas = document.getElementById("b"); <!--finds canvas element-->
+  		var b_context = b_canvas.getContext("2d"); <!--calls canvas' GetContext method -->
+  		b_context.fillRect(50, 25, 150, 100); 
+
+		}
 
 
 
