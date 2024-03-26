@@ -41,15 +41,16 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		
 
 <script>
-	function draw_b() {
+	function draw_b() {//this function will draw a reectangle
  		var b_canvas = document.getElementById("a"); //finds canvas element
   		var b_context = b_canvas.getContext("2d"); //calls canvas' GetContext method
   		b_context.fillRect(50, 25, 150, 100); 
 
 		}
-function clearCanvas() {
+function clearCanvas() {//this function will clear the canvas
 	var b_canvas = document.getElementById("a");
-	 b_context.clearRect(0, 0, b_canvas.width, b_canvas.height);
+	var b_context = b_canvas.getContext("2d");//retrives context here
+	 b_context.clearRect(0, 0, b_canvas.width, b_canvas.height);//clears canvas
 }
 
 
