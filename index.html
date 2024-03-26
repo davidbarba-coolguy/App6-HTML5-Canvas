@@ -48,7 +48,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 		}
 function clear() {
-	var b_canvas = document.getElementById("b");
+	var b_canvas = document.getElementById("a");
 	b_canvas.width = b_canvas.width;
 }
 
@@ -91,12 +91,11 @@ function clear() {
 <div id="content" class="w3-container">
 	<p>Place items on canvas utilizing buttons!</p>
 
-<div
+<div>
 	<button onclick="draw_b()">Draw Rectangle</button>; <!--button that calls draw_b function-->
-</div>
-	<div
 	<button onclick="clear()">Clear Canvas</button> <!--button that clears canvas using clear function-->
-
+</div>
+	<div>
 
 	<canvas id="a" width="300" height="225"></canvas> <!--establishes canvas, its measurements, and location-->
 
