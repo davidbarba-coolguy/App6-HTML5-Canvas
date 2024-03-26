@@ -61,6 +61,17 @@ function addTextToCanvas() {//function that will add my name to canvas
     context.fillText("DAVID FREAKING BARBA", 50, 50); // Draw text at coordinates (50, 50)
 }
 
+function addImageToCanvas() {//this function will add an imaage to the canvas
+    var canvas = document.getElementById("a");
+    var context = canvas.getContext("2d");
+
+    var img = new Image();
+    img.onload = function() {
+        context.drawImage(img, 0, 0, canvas.width, canvas.height);//sets image parameters
+    };
+    img.src = "https://i.pinimg.com/736x/74/f4/f5/74f4f548392fbdafbe8a5d9764c83eaf.jpg"; // identifies image from internet
+}
+
 </script>
 	
 
@@ -101,7 +112,8 @@ function addTextToCanvas() {//function that will add my name to canvas
 
 <div>
 	<button onclick="draw_b()">Draw Rectangle</button> <!--button that calls draw_b function-->
-	<button onclick="addTextToCanvas()">Add Cool Name</button> <!--button that calls draw_b function-->
+	<button onclick="addTextToCanvas()">Add Cool Name</button> <!--button that will add my name to the canvas-->
+	<button onclick="addImageToCanvas()">Add Image</button> <!--button that adds image to the canvas-->
 	<button onclick="clearCanvas()">Clear Canvas</button> <!--button that clears canvas using clear function-->
 
 </div>
